@@ -27,35 +27,36 @@
             <Button
                 android:id="@+id/signIn"
                 style="@style/Button"
-                android:layout_marginTop="52dp"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/signin_button_ripple"
                 android:text="@string/signin"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.968"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView2" />
+                app:layout_constraintTop_toTopOf="@+id/forgetPasswordQuestion" />
 
             <ImageView
                 android:id="@+id/logo"
-                android:layout_width="265dp"
-                android:layout_height="214dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:src="@drawable/logo"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.097" />
+                app:layout_constraintVertical_bias="0.09" />
 
             <EditText
                 android:id="@+id/phonenum"
                 style="@style/EditTextLogin"
                 android:paddingStart="@dimen/dim_m"
+                android:paddingEnd="@dimen/dim_m"
                 android:layout_marginTop="24dp"
                 android:ems="10"
                 android:hint="@string/phonenumber"
-                android:inputType="textPersonName"
+                android:inputType="phone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/logo" />
@@ -101,11 +102,12 @@
                 app:layout_constraintTop_toBottomOf="@+id/password" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/forgetPasswordQuestion"
                 android:layout_width="wrap_content"
                 android:layout_height="23dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="8dp"
+                android:onClick="@{click::forgetPasswordListner}"
                 android:paddingTop="2dp"
                 android:text="@string/forgetmessage"
                 android:textColor="#000000"
@@ -115,7 +117,7 @@
             <Button
                 android:id="@+id/signUp"
                 style="@style/Button"
-                android:onClick="@{click::SignUpOnClick}"
+                android:onClick="@{click::SignUpListener}"
                 android:layout_marginTop="18dp"
                 android:background="@drawable/signup_button_ripple"
                 android:text="@string/signup"

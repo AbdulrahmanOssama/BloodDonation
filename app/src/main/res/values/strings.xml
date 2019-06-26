@@ -18,6 +18,13 @@
     <string name="city" translatable="false">City</string>
     <string name="confirmPassword" translatable="false">Confirm Password</string>
     <string name="register" translatable="false">Register</string>
+    <string name="forgetpassword" translatable="false">Forget Password</string>
+    <string name="send" translatable="false">Send</string>
+    <string name="changecode" translatable="false">Changed Password Code</string>
+    <string name="checkcode" translatable="false">Check Code</string>
+    <string name="newpassword" translatable="false">New Password</string>
+    <string name="confirmNewPass" translatable="false"> Confirm New Password</string>
+    <string name="changepassword" translatable="false"> Change Password</string>
 
     <!-- name of governorates -->
     <string name="NewValley" translatable="false">NewValley</string>

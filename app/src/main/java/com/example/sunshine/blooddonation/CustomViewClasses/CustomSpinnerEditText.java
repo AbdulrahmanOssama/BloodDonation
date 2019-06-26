@@ -23,7 +23,7 @@ public class CustomSpinnerEditText extends LinearLayout {
     //mhint for autocompletetext
     String mhint = null;
     //background for the compound view
-    Drawable mbackground=null;
+    Drawable mbackground = null;
 
     public CustomSpinnerEditText(Context context) {
         super(context);
@@ -48,9 +48,9 @@ public class CustomSpinnerEditText extends LinearLayout {
 
     public void init(AttributeSet attrs) {
         TypedArray typedArray = mContext.obtainStyledAttributes(attrs, R.styleable.CustomSpinnerEditText, 0, 0);
-        if(typedArray!=null) {
+        if (typedArray != null) {
             mhint = typedArray.getString(R.styleable.CustomSpinnerEditText_hint);
-            mbackground=typedArray.getDrawable(R.styleable.CustomSpinnerEditText_CompoundBackgroundSpinner);
+            mbackground = typedArray.getDrawable(R.styleable.CustomSpinnerEditText_CompoundBackgroundSpinner);
             typedArray.recycle();
         }
         View rootView = inflate(mContext, R.layout.spinner_edittext_compound_control, this);
@@ -88,7 +88,7 @@ public class CustomSpinnerEditText extends LinearLayout {
         spinner.setOnItemSelectedListener(onItemSelectedListener);
     }
 
-    public void initAutoCompleteEditText(AutoCompleteTextView editText, Spinner spinner,String hint) {
+    public void initAutoCompleteEditText(AutoCompleteTextView editText, Spinner spinner, String hint) {
         editText.setHint(hint);
         String[] res = getResources().getStringArray(R.array.governorates);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(mContext, android.R.layout.simple_list_item_1, res);
