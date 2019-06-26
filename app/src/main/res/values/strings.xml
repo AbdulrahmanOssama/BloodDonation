@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">BloodDonation</string>
+    <string name="skip">Skip</string>
+
+    <string name="phonenumber" translatable="false">Phone Number</string>
+    <string name="Password" translatable="false">Password</string>
+    <string name="forgetmessage" translatable="false">Did you forget password ?</string>
+    <string name="signin" translatable="false">Sign in</string>
+    <string name="signup" translatable="false">Sign up</string>
+    <string name="rememberme" translatable="false">Remember me</string>
+    <string name="newaccount" translatable="false">New Account</string>
+    <string name="name" translatable="false"> Name</string>
+    <string name="Email" translatable="false">E-mail</string>
+    <string name="dateOfBirth" translatable="false">Date Of Birth</string>
+    <string name="bloodtype" translatable="false">Blood Type</string>
+    <string name="lastDonationDtae" translatable="false"> Last Donation Date</string>
+    <string name="governorate" translatable="false">Governorate</string>
+    <string name="city" translatable="false">City</string>
+    <string name="confirmPassword" translatable="false">Confirm Password</string>
+    <string name="register" translatable="false">Register</string>
+
+    <!-- name of governorates -->
+    <string name="NewValley" translatable="false">NewValley</string>
+    <string name="Matruh" translatable="false">Matruh</string>
+    <string name="RedSea" translatable="false">Red Sea</string>
+    <string name="Giza" translatable="false">Giza</string>
+    <string name="SouthSinai" translatable="false">South Sinai</string>
+    <string name="NorthSinai" translatable="false">North Sinai</string>
+    <string name="Suez" translatable="false">Suez</string>
+    <string name="Beheira" translatable="false">Beheira</string>
+    <string name="Helwan" translatable="false">Helwan</string>
+    <string name="Sharqia" translatable="false">Sharqia</string>
+    <string name="Dakahlia" translatable="false">Dakahlia</string>
+    <string name="KafrelSheikh" translatable="false">Kafr-el-Sheikh</string>
+    <string name="Alexandria" translatable="false">Alexandria</string>
+    <string name="Monufia" translatable="false">Monufia</string>
+    <string name="Minya" translatable="false">Minya</string>
+    <string name="Gharbia" translatable="false">Gharbia</string>
+    <string name="Faiyum" translatable="false">Faiyum</string>
+    <string name="Qena" translatable="false">Qena</string>
+    <string name="Asyut" translatable="false">Asyut</string>
+    <string name="Sohag" translatable="false">Sohag</string>
+    <string name="Ismailia" translatable="false">Ismailia</string>
+    <string name="BeniSuef" translatable="false">Beni Suef</string>
+    <string name="Qalyubia" translatable="false">Qalyubia</string>
+    <string name="Aswan" translatable="false">Aswan</string>
+    <string name="Damietta" translatable="false">Damietta</string>
+    <string name="Cairo" translatable="false">Cairo</string>
+    <string name="Luxor" translatable="false">Luxor</string>
+    <string name="PortSaid" translatable="false">PortSaid</string>
+    <string name="October" translatable="false">October</string>
+
+    <!-- array of governorates to be used in spinner -->
+
+    <string-array name="governorates">
+        <item></item>
+        <item>@string/NewValley</item>
+        <item>@string/Matruh</item>
+        <item>@string/RedSea</item>
+        <item>@string/Giza</item>
+        <item>@string/SouthSinai</item>
+        <item>@string/NorthSinai</item>
+        <item>@string/Suez</item>
+        <item>@string/Beheira</item>
+        <item>@string/Helwan</item>
+        <item>@string/Sharqia</item>
+        <item>@string/Dakahlia</item>
+        <item>@string/KafrelSheikh</item>
+        <item>@string/Alexandria</item>
+        <item>@string/Monufia</item>
+        <item>@string/Minya</item>
+        <item>@string/Gharbia</item>
+        <item>@string/Faiyum</item>
+        <item>@string/Qena</item>
+        <item>@string/Asyut</item>
+        <item>@string/Sohag</item>
+        <item>@string/Ismailia</item>
+        <item>@string/BeniSuef</item>
+        <item>@string/Qalyubia</item>
+        <item>@string/Aswan</item>
+        <item>@string/Damietta</item>
+        <item>@string/Cairo</item>
+        <item>@string/Luxor</item>
+        <item>@string/PortSaid</item>
+        <item>@string/October</item>
+    </string-array>
+
+
+</resources>

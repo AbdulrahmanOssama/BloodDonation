@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/calendarText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textColorHint="@color/blacksignup"
+
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/calendar"
+       android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:src="@drawable/calendar_24dp"
+        />
+
+</LinearLayout>

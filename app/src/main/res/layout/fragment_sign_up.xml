@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:mContext=".intro.SignUpFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/spalsh">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="@dimen/dim_m"
+            android:minHeight="?actionBarSize">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="@string/newaccount"
+                android:textColor="@color/bluegray"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <EditText
+                style="@style/EditTextSignUp"
+                android:hint="@string/name"
+                android:id="@+id/name"
+                 />
+            <EditText
+                style="@style/EditTextSignUp"
+                android:id="@+id/email"
+                android:hint="@string/Email"/>
+            <com.example.sunshine.blooddonation.CustomViewClasses.CustomCalendarEditText
+                style="@style/EditTextSignUp"
+                android:id="@+id/dateOfBirth"
+                custom:CompoundBackgroundCalendar="@drawable/edittextborder"
+                custom:CalendarIcon="@drawable/calendar_24dp"
+                custom:hintCalendar="@string/dateOfBirth"/>
+
+            <EditText
+                android:id="@+id/bloodType"
+                style="@style/EditTextSignUp"
+                android:hint="@string/bloodtype" />
+            <com.example.sunshine.blooddonation.CustomViewClasses.CustomCalendarEditText
+                android:id="@+id/lastDonationDate"
+                style="@style/EditTextSignUp"
+                custom:CalendarIcon="@drawable/calendar_24dp"
+                custom:CompoundBackgroundCalendar="@drawable/edittextborder"
+                custom:hintCalendar="@string/lastDonationDtae" />
+            <com.example.sunshine.blooddonation.CustomViewClasses.CustomSpinnerEditText
+                android:id="@+id/governorate"
+                style="@style/EditTextSignUp"
+                android:paddingEnd="1dp"
+                custom:hint="@string/governorate"
+                custom:CompoundBackgroundSpinner="@drawable/edittextborder"
+                 />
+            <com.example.sunshine.blooddonation.CustomViewClasses.CustomSpinnerEditText
+                android:id="@+id/city"
+                style="@style/EditTextSignUp"
+                custom:CompoundBackgroundSpinner="@drawable/edittextborder"
+                android:paddingEnd="1dp"
+                custom:hint="@string/city"
+               />
+            <EditText
+                android:id="@+id/phoneNum"
+                style="@style/EditTextSignUp"
+                android:hint="@string/phonenumber"
+                android:inputType="phone"/>
+            <EditText
+                android:id="@+id/password"
+                style="@style/EditTextSignUp"
+                android:hint="@string/Password" />
+            <EditText
+                android:id="@+id/confirmPassword"
+                style="@style/EditTextSignUp"
+                android:hint="@string/confirmPassword" />
+
+            <Button
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:elevation="8dp"
+                android:background="@drawable/register_button_ripple"
+                android:text="@string/register"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        </ScrollView>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</FrameLayout>
