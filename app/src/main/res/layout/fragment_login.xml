@@ -15,16 +15,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/LoginContainer"
-        >
+        android:clickable="true"
+        android:focusable="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:mContext=".intro.LoginFragment"
             android:background="@drawable/spalsh">
 
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/signIn"
                 style="@style/Button"
                 android:layout_marginTop="40dp"
@@ -48,7 +48,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.09" />
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/phonenum"
                 style="@style/EditTextLogin"
                 android:paddingStart="@dimen/dim_m"
@@ -61,7 +61,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/logo" />
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/password"
                 style="@style/EditTextLogin"
                 android:layout_marginTop="@dimen/dim_m"
@@ -114,7 +114,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/imageView3"
                 app:layout_constraintTop_toBottomOf="@+id/password" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/signUp"
                 style="@style/Button"
                 android:onClick="@{click::SignUpListener}"

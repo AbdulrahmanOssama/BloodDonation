@@ -2,10 +2,12 @@ package com.example.sunshine.blooddonation.intro;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 
 import com.example.sunshine.blooddonation.R;
@@ -39,5 +41,7 @@ public class introActivity extends AppCompatActivity {
         tabs.setupWithViewPager(viewPager,true);
 
     }
+
+
 
 }

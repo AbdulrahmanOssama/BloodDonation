@@ -10,7 +10,6 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import com.example.sunshine.blooddonation.R;
 import com.example.sunshine.blooddonation.UtiltyClass;

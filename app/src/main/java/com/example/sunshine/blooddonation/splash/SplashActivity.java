@@ -27,7 +27,7 @@ public class SplashActivity extends AppCompatActivity {
 
     //timer for splash screen
     private void SplashAnimation() {
-        ImageView imageView = findViewById(R.id.splashlogo);
+        final ImageView imageView = findViewById(R.id.splashlogo);
         //define an object animator
         ObjectAnimator translateAnimation =
                 ObjectAnimator.ofFloat(imageView, View.TRANSLATION_Y, -900, 0);
@@ -46,6 +46,7 @@ public class SplashActivity extends AppCompatActivity {
                 if (intent.resolveActivity(SplashActivity.this.getPackageManager()) != null) {
                     startActivity(intent);
                     overridePendingTransition(R.anim.left,R.anim.outright);
+                    imageView.clearAnimation();
 
                 }
 
